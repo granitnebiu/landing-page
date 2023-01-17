@@ -18,8 +18,11 @@
 
 :root {
     --primary-color: #1F2937;
-    --secondary-color: #6c757d;
+    --secondary-color: #6C757d;
     --text-color: #212529;
+    --hero-main-color: #F9FAF8;
+    --hero-secondary-color: #E5E7EB;
+    --button-color: #3882f6;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -66,7 +69,7 @@ h1 {
     justify-content: space-between;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 15px 200px 15px 200px;
+    padding: 15px 200px;
 }
 
 .nav-list {
@@ -76,7 +79,7 @@ h1 {
 }
 
 .nav a {
-    color: #fff;
+    color: var(--hero-main-color);
 }
 
 .nav a:hover {
@@ -97,9 +100,60 @@ h1 {
     font-family: 'RobotoBold', sans-serif;
 }
 
+/* Intro container */
+.intro-container {
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 120px 200px;
+}
+
+.intro-child {
+    padding-right: 36px;
+    row-gap: 25px;
+    
+}
+
+.intro-child h1 {
+    color: var(--hero-main-color);
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.intro-child p {
+    color: var(--hero-secondary-color);
+    font-size: 18px;
+    margin-top: 5px;
+    padding-bottom: 24px;
+    width: 20vw;
+}
+
+.intro-child a {
+    background-color: var(--button-color);
+    color: var(--hero-secondary-color);
+    padding: 8px 24px;
+    margin: 200px 0px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.intro-image {
+    background-color: rgb(105, 105, 105);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 225px;
+}
+
+.main-image {
+    color: var(--hero-secondary-color)
+}
+
 footer {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--hero-secondary-color);
     padding: 20px;
     text-align: center;
 }
