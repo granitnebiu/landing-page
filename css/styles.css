@@ -142,11 +142,11 @@ h1 {
 }
 
 .intro-image__caption {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--hero-secondary-color);
     font-family: 'RobotoBold', sans-serif;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -237,7 +237,7 @@ footer {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .header {
         flex-direction: row;
         padding: 20px 50px;
@@ -269,9 +269,7 @@ footer {
     }
 
     .intro-image__caption {
-        font-size: 16px;
         top: 50%;
-
     }
 
     .container {
@@ -279,4 +277,23 @@ footer {
         margin: 0 auto;
     }
 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    .header {
+        flex-direction: row;
+        padding: 20px 150px 0px 150px;
+        max-height: 65vh;
+    }
+
+    .intro-container {
+        min-height: 70vh;
+        padding: 100px 150px 0px 150px;
+        gap: 2rem;
+    }
+
+    .intro-image__caption {
+        top: 25%;
+    }
 }
