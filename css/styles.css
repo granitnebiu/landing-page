@@ -73,7 +73,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--hero-main-color);
     padding: 15px 150px;
 }
 
@@ -151,13 +151,14 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-
 .btn {
     display: inline-block;
     padding: 0.75rem 2.5rem;
     font-size: 18px;
     border-radius: 0.4rem;
     cursor: pointer;
+    background-color: var(--color-blue);
+    color: var(--hero-main-color);
     transition: var(--transition);
 }
 
@@ -168,16 +169,117 @@ h1 {
 }
 
 .btn:hover {
-    background-color: var(--color-white);
+    background-color: var(--hero-main-color);
     color: var(--text-color);
     border-color: transparent;
 }
 
-.btn-primary {
-    background-color: var(--color-blue);
-    color: #fff;
+.btn-secondary {
+    border: 2px solid var(--hero-main-color);
 }
 
+.btn-secondary:hover {
+    color: var(--color-blue);
+}
+
+/* Info container */
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 75px;
+}
+
+.info-heading {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  width: 100%;
+}
+
+.info-heading h1 {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+}
+
+.info-image {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 20px 20px;
+}
+
+.info-image img {
+  border: 3px solid var(--color-blue);
+  border-radius: 16px;
+  height: 165px;
+  width: 165px;
+}
+
+.info-image__subtext {
+  width: 150px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+/* Quote container */
+.quote-container {
+  background-color: var(--hero-secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.quote-text {
+  color: var(--primary-color);
+  font-family: none;
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  width: 750px;
+}
+
+.author {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: bold;
+  width: 750px;
+  text-align: right;
+}
+
+/* Sign-up container */
+.sign-up-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.sign-up-child {
+    background-color: var(--color-blue);
+    border-radius: 8px;
+    width: 85%;
+    height: 80px;
+    padding: 75px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 175px;
+}
+
+.sign-up-text {
+    color: var(--hero-secondary-color);
+    font-size: 18px;
+}
+
+.sign-up-maintext {
+    color: var(--hero-main-color);
+    font-size: 28px;
+    font-weight: bold;
+}
 
 footer {
     background-color: var(--primary-color);
@@ -218,7 +320,6 @@ footer {
     .intro-image__caption {
         font-size: 16px;
         top: 50%;
-
     }
 
     .nav-list {
