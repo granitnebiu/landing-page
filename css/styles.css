@@ -74,7 +74,7 @@ h1 {
     justify-content: space-between;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 15px 250px;
+    padding: 15px 150px;
 }
 
 .nav-list {
@@ -110,8 +110,8 @@ h1 {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    min-height: 55vh;
-    padding: 150px 250px 0px 250px;
+    height: 400px;
+    padding: 80px 150px 50px 150px;
     gap: 3rem;
 }
 
@@ -146,7 +146,7 @@ h1 {
     color: var(--hero-secondary-color);
     font-family: 'RobotoBold', sans-serif;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -187,8 +187,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-
     .header {
         align-items: flex-start;
         flex-direction: column;
@@ -200,7 +198,7 @@ footer {
         padding: 0;
         gap: 0;
         justify-content: flex-start;
-        max-height: 100%;
+        height: 100%;
     }
 
     .intro-child {
@@ -254,7 +252,7 @@ footer {
         justify-content: flex-start;
         padding: 20px 50px;
         gap: 0;
-        min-height: 55vh;
+        height: 100%;
     }
 
     .intro-child {
@@ -283,11 +281,9 @@ footer {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-
     .header {
         flex-direction: row;
         padding: 20px 100px 0px 100px;
-        max-height: 65vh;
     }
 
     .intro-child h1 {
@@ -296,12 +292,12 @@ footer {
     }
 
     .intro-container {
-        min-height: 70vh;
         padding: 100px 100px 0px 100px;
         gap: 2rem;
     }
 
     .intro-image__caption {
-        top: 25%;
+        top: 30%;
+        font-size: 14px;
     }
 }
