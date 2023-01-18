@@ -1,15 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <title>Contact</title>
-</head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>My Website</title>
+      <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+   </head>
 
-<body>
-</body>
+   <body>
+      <header class="header">
+         <div class="logo"><a href="/">Header Logo</a></div>
+         <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item">
+                  <a href="../index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a href="../pages/about-us.html">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a href="../pages/contact.html">Contact</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
 
+      <section class="intro-container">
+         <div class="heading-intro">
+            <h1>Let's make something awesome together</h1>
+            <p>
+               Drop us a line, or give us a heads up if you're interested in
+               collaborating with us!
+            </p>
+         </div>
+      </section>
+
+      <section class="container">
+         <div class="heading-contact">
+            <h2 class="heading-medium">Get in touch</h2>
+            <p>let's tak about your project</p>
+         </div>
+         <div className="contact__container">
+            <form>
+               <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Full Name"
+                  required
+               />
+               <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+               />
+               <textarea
+                  name="message"
+                  row="7"
+                  placeholder="Your message"
+                  required
+               ></textarea>
+               <button type="submit" class="btn btn-secondary">
+                  Send Message
+               </button>
+            </form>
+         </div>
+      </section>
+
+      <section class="container">
+         <div class="contact-location">
+            <div class="contact-location__first">
+               <div class="contact-person">
+                  <p>Rhuan Klassmann</p>
+                  <p>Front-End Developer</p>
+                  <p>Brazil</p>
+               </div>
+
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31656393.254779518!2d-51.316680000000005!3d-14.40952615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrazil!5e0!3m2!1sen!2s!4v1674070511872!5m2!1sen!2s"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+               ></iframe>
+            </div>
+            <div class="contact-location__second">
+               <div class="contact-person">
+                  <p>Granit Nebiu</p>
+                  <p>Front-End Developer</p>
+                  <p>Serbia</p>
+               </div>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929350.4158508377!2d18.667703469255688!3d44.19277589240286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47571ddff2898095%3A0x55e50ea3723865d!2sSerbia!5e0!3m2!1sen!2s!4v1674070532809!5m2!1sen!2s"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+               ></iframe>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <p class="footer-text">Copyright © 2023 My Website</p>
+      </footer>
+   </body>
 </html>
