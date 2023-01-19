@@ -75,12 +75,15 @@ a {
 
 /* Flexbox layout for the header */
 .header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--primary-color);
     color: var(--hero-main-color);
-    padding: 15px 150px;
 }
 
 .nav-list {
@@ -104,9 +107,8 @@ a {
 }
 
 .container {
-    width: var(--container-width-lg);
     margin: 0 auto;
-    padding: 50px 0;
+    width: var(--container-width-lg);
 }
 
 .main-heading {
@@ -116,11 +118,14 @@ a {
 /* Intro container */
 .intro-container {
     background-color: var(--primary-color);
+    height: 400px;
+    gap: 3rem;
+}
+
+.intro-styles {
     display: flex;
     justify-content: space-between;
-    height: 400px;
-    padding: 80px 150px 50px 150px;
-    gap: 3rem;
+    padding: 100px 0;
 }
 
 .intro-child {
@@ -165,14 +170,27 @@ a {
     font-size: 18px;
     border-radius: 0.4rem;
     cursor: pointer;
-    background-color: var(--color-blue);
-    color: var(--hero-main-color);
     transition: var(--transition);
-
 }
 
 .btn-primary {
     width: 10rem;
+    background-color: var(--color-blue);
+    color: var(--hero-main-color);
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    border: 2px solid var(--hero-main-color);
+    padding: 15px;
+    color: var(--color-white);
+}
+
+.btn-tertiary {
+    width: 13rem;
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .btn-primary:hover {
@@ -181,16 +199,14 @@ a {
     border-color: transparent;
 }
 
-.btn-secondary {
-    background-color: var(--primary-color);
-
-    border: 2px solid var(--hero-main-color);
-    padding: 15px;
-}
-
 .btn-secondary:hover {
     background-color: var(--color-blue);
     color: var(--color-white);
+}
+
+.btn-tertiary:hover {
+    background-color: var(--hero-main-color);
+    color: var(--color-black);
 }
 
 /* Info container */
@@ -238,47 +254,49 @@ a {
 /* Quote container */
 .quote-container {
     background-color: var(--hero-secondary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 .quote-text {
+    display: block;
+    margin: 0 auto;
     color: var(--primary-color);
     font-family: none;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    width: 750px;
+    padding: 0 130px;
 }
 
 .author {
     color: var(--primary-color);
     font-size: 24px;
     font-weight: bold;
-    width: 750px;
     text-align: right;
 }
 
 /* Sign-up container */
+.sign-up-section {
+    padding: 100px 0;
+}
+
 .sign-up-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px 0;
+
 }
 
 .sign-up-child {
+    display: flex;
     background-color: var(--color-blue);
     border-radius: 8px;
-    width: 85%;
     height: 80px;
     padding: 75px 100px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 175px;
+    gap: 3rem;
 }
 
 .sign-up-text {
@@ -309,9 +327,6 @@ footer {
     align-items: center;
     color: var(--color-white);
     line-height: 3rem;
-}
-
-.heading-intro {
     font-family: 'RobotoLight', sans-serif;
 }
 
@@ -320,12 +335,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 100px 0;
 }
 
 .heading-medium {
     font-family: 'RobotoLight', sans-serif;
     font-size: 40px;
+
 }
 
 .heading-contact p {
@@ -369,30 +385,31 @@ textarea {
 .contact-location {
     display: flex;
     gap: 3rem;
+    padding: 100px 0;
 }
 
-.contact-location__first {
+.contact-location__card {
     width: 50%;
 }
 
 
-.contact-location__second {
-    width: 50%;
-}
 
 @media screen and (max-width: 768px) {
     .header {
         align-items: flex-start;
         flex-direction: column;
-        padding: 35px 20px 20px 15px;
     }
 
     .intro-container {
+        height: 100%;
+    }
+
+
+    .intro-styles {
         flex-direction: column;
         padding: 0;
         gap: 0;
         justify-content: flex-start;
-        height: 100%;
     }
 
     .intro-child {
@@ -428,6 +445,27 @@ textarea {
         margin: 0 auto;
     }
 
+    .quote-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .sign-up-child {
+        flex-direction: column;
+        height: auto;
+        padding: 35px 35px;
+        align-items: space-between;
+        gap: 1.5rem;
+    }
+
+    .contact-location {
+        flex-direction: column;
+    }
+
+    .contact-location__card {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -441,11 +479,14 @@ textarea {
     }
 
     .intro-container {
+        height: 100%;
+    }
+
+    .intro-styles {
         flex-direction: column;
         justify-content: flex-start;
         padding: 20px 50px;
         gap: 0;
-        height: 100%;
     }
 
     .intro-child {
@@ -471,12 +512,25 @@ textarea {
         margin: 0 auto;
     }
 
+    .quote-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-location {
+        flex-direction: column;
+    }
+
+    .contact-location__card {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .header {
         flex-direction: row;
-        padding: 20px 100px 0px 100px;
+        padding: 20px 0 0 0;
+
     }
 
     .intro-child h1 {
@@ -485,12 +539,16 @@ textarea {
     }
 
     .intro-container {
-        padding: 100px 100px 0px 100px;
         gap: 2rem;
     }
+
 
     .intro-image__caption {
         top: 30%;
         font-size: 14px;
+    }
+
+    .quote-text {
+        width: 100%;
     }
 }
