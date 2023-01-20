@@ -408,7 +408,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .card-series__style {
