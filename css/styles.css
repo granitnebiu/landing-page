@@ -505,6 +505,10 @@ textarea {
         gap: 1.5rem;
     }
 
+    .heading-intro h1 {
+        text-align: center;
+    }
+
     .about-child {
         display: block;
     }
