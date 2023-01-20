@@ -152,16 +152,8 @@ a {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-.intro-image__caption {
-    font-size: 16px;
-    color: var(--hero-secondary-color);
-    font-family: 'RobotoBold', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 2px solid var(--color-blue);
+    border-radius: 16px;
 }
 
 .btn {
