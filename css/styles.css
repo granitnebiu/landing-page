@@ -442,6 +442,15 @@ textarea {
     align-items: flex-end;
 }
 
+.go_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-blue);
+    padding: 15px;
+    color: var(--color-white)
+}
+
 @media screen and (max-width: 768px) {
     .header {
         align-items: flex-start;
